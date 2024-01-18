@@ -109,16 +109,17 @@ function Home(props) {
         <h1 className="mt-10 mb-8 ml-8 text-lg">Best Coaches</h1>
         <div className="flex flex-row h-44 items-stretch justify-between space-x-7">
           {bestCoaches.map((coach, index) => (
-            <div
-              key={index}
-              className="h-36 w-28 flex flex-col items-center justify-between"
-            >
-              <Link
+            <Link
                   href={
                     "https://experience-beta.vercel.app/coaches/" +
                     props.coach
                   }
                 >
+            <div
+              key={index}
+              className="h-36 w-28 flex flex-col items-center justify-between"
+            >
+              
               <img
                 src={coach.photo}
                 alt={coach.user.username}
@@ -128,8 +129,8 @@ function Home(props) {
               <div className="flex flex-row">{generateStars(coach.rating)}</div>
               <span className="m-2 text-sm">({coach.reviewCount})</span>{" "}
               
-              </Link>
             </div>
+            </Link>
           ))}
         </div>
       </div>
