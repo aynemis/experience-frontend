@@ -112,7 +112,7 @@ function CoachProfile(props) {
             </div>
           </div>
           <div>
-            <div className="flex">
+            <div className="flex h-7">
               <span className="text-white mb-1">@{props.username}</span>
               <div className="dropdown dropdown-top dropdown-end ">
                 <div className="mb-20" tabIndex={0}>
