@@ -1,6 +1,7 @@
 "use client";
 import SearchBar from "./Searchbar";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 // Prevent fontawesome icons from flashing large icons when reloading :
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
