@@ -31,7 +31,7 @@ function UserProfile(props) {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
+        console.log("data"+data);
         if (data.result) {
           setBookings(data.bookings);
         } else {

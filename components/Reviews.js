@@ -145,7 +145,14 @@ function Review(props) {
                 <div className="w-10 h-10 rounded-full mr-4">
                   <img src={props.photo} alt="Profile pic" />
                 </div>
+                <Link
+                  href={
+                    "https://experience-beta.vercel.app/coaches/" +
+                    props.coach
+                  }
+                >
                 <span className="text-sm">@{props.coach}</span>
+                </Link>
               </div>
 
               <span className="text-xs">{stars}</span>
