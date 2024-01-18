@@ -101,7 +101,7 @@ function CoachProfile(props) {
     </div>
   ));
 
-  console.log("profile", profile);
+
   return (
     <div className="flex flex-col items-center ">
       <div className="w-5/6 flex-1">
