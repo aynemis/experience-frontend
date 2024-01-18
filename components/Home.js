@@ -112,7 +112,7 @@ function Home(props) {
             <Link
                   href={
                     "https://experience-beta.vercel.app/coaches/" +
-                    props.coach
+                    coach.user.username
                   }
                 >
             <div
