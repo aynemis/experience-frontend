@@ -112,7 +112,29 @@ function CoachProfile(props) {
             </div>
           </div>
           <div>
-            <span className="text-white mb-1">@{props.username}</span>
+            <div className="flex">
+              <span className="text-white mb-1">@{props.username}</span>
+              <div className="dropdown dropdown-top dropdown-end ">
+                <div className="mb-20" tabIndex={0}>
+                  <span className="ml-5">
+                    <FontAwesomeIcon
+                      icon={faEllipsisVertical}
+                      style={{ color: "#ffffff" }}
+                    />
+                  </span>
+                </div>
+                <ul
+                  tabIndex={0}
+                  className="dropdown-content z-[1] menu  bg-base-100 rounded-box w-36 h-7 justify-center align-center"
+                >
+                  <li className="text-accent text-xs">
+                    <a href="/contact">Report this user</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
             <div className="text-xs mb-4">
               <span>{stars}</span>
               <span className="text-white"> ({reviewCount})</span>
@@ -149,24 +171,7 @@ function CoachProfile(props) {
               </button>
             )}
           </div>
-          <div className="dropdown dropdown-top dropdown-end ">
-            <div className="mb-20" tabIndex={0}>
-              <span className="ml-5">
-                <FontAwesomeIcon
-                  icon={faEllipsisVertical}
-                  style={{ color: "#ffffff" }}
-                />
-              </span>
-            </div>
-            <ul
-              tabIndex={0}
-              className="dropdown-content z-[1] menu  bg-base-100 rounded-box w-36 h-7 justify-center align-center"
-            >
-              <li className="text-accent text-xs">
-                <a href="/contact">Report this user</a>
-              </li>
-            </ul>
-          </div>
+         
         </div>
         <div className="text-white w-full">
           <h2 className="text-lg mb-2"> About me</h2>
