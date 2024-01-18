@@ -8,7 +8,7 @@ function ResetPassword(props) {
   const [password, setPassword] = useState("");
 
   const handleSubmit = () => {
-    fetch("https://experience-backend.vercel.app/users/updatepassword", {
+    fetch("https://experience-backend-five.vercel.app/users/updatepassword", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

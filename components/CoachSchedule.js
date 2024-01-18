@@ -25,13 +25,13 @@ function CoachSchedule(props) {
   //Get the coach credentials and if user token is valid then get profile
   useEffect(() => {
     fetch(
-      `https://experience-backend.vercel.app/users/credentials/${props.username}`
+      `https://experience-backend-five.vercel.app/users/credentials/${props.username}`
     )
       .then((response) => response.json())
       .then((data) => {
         if (user.token === data.credentials.token) {
           fetch(
-            `https://experience-backend.vercel.app/coaches/profile/${props.username}`
+            `https://experience-backend-five.vercel.app/coaches/profile/${props.username}`
           )
             .then((response) => response.json())
             .then((data) => {
@@ -45,7 +45,7 @@ function CoachSchedule(props) {
 
   //Get all bookings for this coach
   useEffect(() => {
-    fetch(`https://experience-backend.vercel.app/bookings/${props.username}`)
+    fetch(`https://experience-backend-five.vercel.app/bookings/${props.username}`)
       .then((response) => response.json())
       .then((data) => {
         setBookings(data.bookings);
@@ -53,7 +53,7 @@ function CoachSchedule(props) {
 
     //Get all unavailabilities
     fetch(
-      `https://experience-backend.vercel.app/unavailabilities/${props.username}`
+      `https://experience-backend-five.vercel.app/unavailabilities/${props.username}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -89,7 +89,7 @@ function CoachSchedule(props) {
   const handleClose = () => {
     console.log(selectedDate, profile._id);
     if (checkbox) {
-      fetch("https://experience-backend.vercel.app/unavailabilities", {
+      fetch("https://experience-backend-five.vercel.app/unavailabilities", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -100,7 +100,7 @@ function CoachSchedule(props) {
         .then((response) => response.json())
         .then((data) => console.log(data));
     } else {
-      fetch("https://experience-backend.vercel.app/unavailabilities", {
+      fetch("https://experience-backend-five.vercel.app/unavailabilities", {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

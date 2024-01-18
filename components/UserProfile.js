@@ -19,7 +19,7 @@ function UserProfile(props) {
 
   useEffect(() => {
     fetch(
-      `https://experience-backend.vercel.app/gamers/profile/${props.username}`
+      `https://experience-backend-five.vercel.app/gamers/profile/${props.username}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -27,7 +27,7 @@ function UserProfile(props) {
       });
 
     fetch(
-      `https://experience-backend.vercel.app/bookings/gamer/${props.username}`
+      `https://experience-backend-five.vercel.app/bookings/gamer/${props.username}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -40,7 +40,7 @@ function UserProfile(props) {
       });
 
     fetch(
-      `https://experience-backend.vercel.app/reviews/gamer/${props.username}`
+      `https://experience-backend-five.vercel.app/reviews/gamer/${props.username}`
     )
       .then((response) => response.json())
       .then((data) => {

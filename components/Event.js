@@ -19,7 +19,7 @@ function Event(props) {
   const [isDeleted, setisDeleted] = useState(false);
 
   const handleCancel = () => {
-    fetch("https://experience-backend.vercel.app/bookings", {
+    fetch("https://experience-backend-five.vercel.app/bookings", {
       method: "DELETE",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -32,7 +32,7 @@ function Event(props) {
         setisDeleted(data.result);
 
         fetch(
-          "https://experience-backend.vercel.app/emails/bookingCancellation",
+          "https://experience-backend-five.vercel.app/emails/bookingCancellation",
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },

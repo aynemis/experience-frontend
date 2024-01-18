@@ -15,7 +15,7 @@ function Contact() {
     if (!userName || !userEmail || !subject || !msg) {
       setError("Missing field(s)");
     } else {
-      fetch("https://experience-backend.vercel.app/emails/contact", {
+      fetch("https://experience-backend-five.vercel.app/emails/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -41,7 +41,7 @@ function SearchPage({ searchQuery }) {
     // GET API to collect search data
     if (searchQuery) {
       fetch(
-        `https://experience-backend.vercel.app/search/globalSearch?search=${searchQuery}`
+        `https://experience-backend-five.vercel.app/search/globalSearch?search=${searchQuery}`
       )
         .then((response) => response.json())
         .then((data) => {

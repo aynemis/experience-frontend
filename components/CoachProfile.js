@@ -34,7 +34,7 @@ function CoachProfile(props) {
 
   useEffect(() => {
     fetch(
-      `https://experience-backend.vercel.app/coaches/profile/${props.username}`
+      `https://experience-backend-five.vercel.app/coaches/profile/${props.username}`
     )
       .then((response) => response.json())
       .then((data) => {
@@ -58,7 +58,7 @@ function CoachProfile(props) {
   }, []);
 
   useEffect(() => {
-    fetch(`https://experience-backend.vercel.app/reviews/${props.username}`)
+    fetch(`https://experience-backend-five.vercel.app/reviews/${props.username}`)
       .then((response) => response.json())
       .then((data) => {
         let reviewsdata = data.reviews;

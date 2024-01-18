@@ -20,7 +20,7 @@ function GamerSchedule(props) {
 
   useEffect(() => {
     fetch(
-      `https://experience-backend.vercel.app/users/credentials/${props.username}`
+      `https://experience-backend-five.vercel.app/users/credentials/${props.username}`
     )
       .then((response) => response.json())
       .then((data) => {
