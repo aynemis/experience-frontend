@@ -82,7 +82,6 @@ function GamerSchedule(props) {
         </div>
 
         <div className=" flex flex-col items-stretch align-center">
-          <p className="text-lg mb-7 ">My Schedule</p>
           <div className="flex flex-col justify-center w-full items-center">
             <div className="bg-base-100 rounded-xl">
               <DayPicker
