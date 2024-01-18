@@ -10,7 +10,7 @@ function Header() {
   
   return (
     <div className="navbar pt-8 mb-6">
-      <div className="container mx-4 flex justify-between items-center">
+      <div className="mx-4 flex justify-between items-center">
         <Menu />
         <div>
           <a href="/" className="btn btn-ghost w-40">
