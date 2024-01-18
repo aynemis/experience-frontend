@@ -106,7 +106,7 @@ function Home(props) {
         </div>
 
         <h1 className="mt-10 mb-8 ml-8 text-lg">Best Coaches</h1>
-        <div className="flex flex-row h-44 items-stretch overflow-x-scroll justify-between space-x-7">
+        <div className="flex flex-row h-44 items-stretch justify-between space-x-7">
           {bestCoaches.map((coach, index) => (
             <div
               key={index}
