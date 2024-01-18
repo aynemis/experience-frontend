@@ -126,7 +126,7 @@ function Home(props) {
               />
               <p className="m-2">{coach.user.username}</p>
               <div className="flex flex-row">{generateStars(coach.rating)}</div>
-              <p className="m-2 text-sm">({coach.reviewCount})</p>{" "}
+              <span className="m-2 text-sm">({coach.reviewCount})</span>{" "}
               
               </Link>
             </div>
