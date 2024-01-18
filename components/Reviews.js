@@ -177,7 +177,7 @@ function Review(props) {
                 </div>
                 <Link
                   href={
-                    "https://experience-frontend.vercel.app/gamer/" +
+                    "https://experience-beta.vercel.app/gamer/" +
                     props.username
                   }
                 >
