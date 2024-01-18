@@ -112,6 +112,12 @@ function Home(props) {
               key={index}
               className="h-36 w-28 flex flex-col items-center justify-between"
             >
+              <Link
+                  href={
+                    "https://experience-beta.vercel.app/coaches/" +
+                    props.coach
+                  }
+                >
               <img
                 src={coach.photo}
                 alt={coach.user.username}
@@ -120,7 +126,8 @@ function Home(props) {
               <p className="m-2">{coach.user.username}</p>
               <div className="flex flex-row">{generateStars(coach.rating)}</div>
               <p className="m-2 text-sm">({coach.reviewCount})</p>{" "}
-              {/* Exemple de données */}
+              
+              </Link>
             </div>
           ))}
         </div>
